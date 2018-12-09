@@ -1,0 +1,21 @@
+defscrollback 50000
+altscreen on
+ignorecase on
+
+
+bind h focus left
+bind j focus down
+bind k focus up
+bind l focus right
+
+# Special status bar
+caption always "%{= KW}%-Lw%{= wb}%n %t %{= KW}%+Lw %-=| ${USER}@%H | Load: %l | %M%d %c%{-}"
+# Some decryption hints:
+# # %{= KW}     background light black (aka dark gray) with foreground light white
+# # %{= wb}     background dark white (ake light gray) with foreground dark blue
+# # %-Lw        all windows before the current window.
+# # %n%f %t     current window number, flags and title.
+# # %+Lw        all windows after the current window.
+# # %-=         pad remaining spaces.
+# # %H          hostname.
+# # %M%d %s     month and day (MmmDD) and current time (HH:MM). 
