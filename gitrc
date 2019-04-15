@@ -1,0 +1,5 @@
+
+
+git config --global alias.logg "log --oneline --graph --decorate --all"
+git config --global alias.editconflict "diff --name-only --diff-filter=U | uniq | xargs vim"
+
